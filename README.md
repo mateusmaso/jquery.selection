@@ -1,16 +1,16 @@
 jquery.selection [![Build Status](https://travis-ci.org/mateusmaso/jquery.selection.svg?branch=master)](https://travis-ci.org/mateusmaso/jquery.selection)
 ================
 
-jQuery plugin for handling selection.
+jQuery plugin for handling selections.
 
 ## Features
 
-* Save selection
-* Restore selection
+* Save selection using ```saveSelection``` method.
+* Restore selection using ```restoreSelection``` method.
 
 ## Dependencies
 
-* jquery.js (>= 2.1)
+* jquery.js (>= 2.1.0)
 
 ## Examples
 
