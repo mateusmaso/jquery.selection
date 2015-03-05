@@ -1,8 +1,8 @@
 // jquery.selection
 // ----------------
-// v0.1.1
+// v0.1.2
 //
-// Copyright (c) 2013-2014 Mateus Maso
+// Copyright (c) 2013-2015 Mateus Maso
 // Distributed under MIT license
 //
 // http://github.com/mateusmaso/jquery.selection
@@ -32,8 +32,8 @@
       var selection = window.getSelection();
       var range = $(this).data("savedSelection");
 
-      if (this.is("textarea") || this.is("input") || !range) {
-        this.focus();
+      if ($(this).is("textarea") || $(this).is("input") || !range) {
+        $(this).focus();
       } else {
         if (selection.rangeCount > 0) selection.removeAllRanges();
         selection.addRange(range);

@@ -23,8 +23,8 @@
       var selection = window.getSelection();
       var range = $(this).data("savedSelection");
 
-      if (this.is("textarea") || this.is("input") || !range) {
-        this.focus();
+      if ($(this).is("textarea") || $(this).is("input") || !range) {
+        $(this).focus();
       } else {
         if (selection.rangeCount > 0) selection.removeAllRanges();
         selection.addRange(range);
